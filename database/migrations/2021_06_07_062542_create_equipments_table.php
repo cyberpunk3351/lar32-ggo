@@ -15,6 +15,7 @@ class CreateEquipmentsTable extends Migration
     {
         Schema::create('equipments', function (Blueprint $table) {
             $table->id();
+            $table->string('title', 100);
             $table->timestamps();
         });
     }
