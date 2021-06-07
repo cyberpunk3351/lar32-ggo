@@ -15,6 +15,9 @@ class CreateOrdersEquipmentsTable extends Migration
     {
         Schema::create('orders_equipments', function (Blueprint $table) {
             $table->id();
+            $table->integer('order_id');
+            $table->integer('equipment_id');
+            $table->integer('fider_id');
             $table->timestamps();
         });
     }
