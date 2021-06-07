@@ -15,6 +15,7 @@ class CreateOrderrolesTable extends Migration
     {
         Schema::create('orderroles', function (Blueprint $table) {
             $table->id();
+            $table->string('title', 100);
             $table->timestamps();
         });
     }
