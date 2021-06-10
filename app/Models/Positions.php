@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Positions extends Model
 {
     use HasFactory;
+
+    public function employes() {
+        return $this->hasOne(Employes::class, 'employe_position', 'position_id', 'employes_id');
+    }
 }
