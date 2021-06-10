@@ -13,9 +13,9 @@ class CreateUserpositionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('userpositions', function (Blueprint $table) {
+        Schema::create('employe_position', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained();
+            $table->foreignId('employes_id')->constrained();
             $table->foreignId('position_id')->constrained();
             $table->timestamps();
         });
